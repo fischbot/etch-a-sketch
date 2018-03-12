@@ -66,4 +66,14 @@ a:hover {
     justify-content: space-around;
     font-weight: bold;
   }
+
+  .arrows {
+    color: #E94F37;
+  }
+
+  span {
+    color: #56445D;
+    font-variant: small-caps;
+    font-weight: bold;
+  }
 }
