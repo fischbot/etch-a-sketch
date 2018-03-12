@@ -36,3 +36,34 @@ a:hover {
   max-width: 900px;
   margin: 0 auto;
 }
+
+/* ========================= Etch-A-Sketch ================================= */
+
+/* ========================== Instructions ================================= */
+#instructions {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  #instructions {
+    display: block;
+    background: #FFFAE2;
+    padding: 30px;
+    margin: 40px 0;
+    border-radius: 10px;
+  }
+
+  #instructions ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 75px;
+  }
+
+  #instructions li {
+    list-style-type: none;
+    align-self: center;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+}
