@@ -1,10 +1,13 @@
 body {
-  background: #6CAE75;
+  padding: 0;
+  background: #CA0408;
   margin: 0;
-  padding: 75px;
   font-family: sans-serif;
   font-size: 18px;
   color: #222;
+}
+
+#page {
 }
 
 h2,
@@ -38,13 +41,152 @@ a:hover {
 }
 
 /* ========================= Etch-A-Sketch ================================= */
+#canvas-container {
+  text-align: center;
+  border: none;
+  position: relative;
+  /* width: 300px;
+  height: 350px; */
+}
+
+/* #canvas {
+  width: 300px;
+  height: 350px;
+} */
+
+
+#bezel {
+  /* width: 300px; */
+  /* height: 350px; */
+  padding: 10px 0 0 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+/* ========================= Controls ================================= */
+.controls-container {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 8% 0;
+}
+
+#left-dial,
+#right-dial {
+  box-sizing: border-box;
+  display: inline-block;
+  /* 3d effect */
+  background-color: #E6E2A1 ;
+  border-top: 1px solid #E8F2F2 ;
+  border-right: 5px solid #222 ;
+  border-bottom: 5px solid #222 ;
+  border-left: 1px solid #E8F2F2 ;
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+
+}
+
+#clear-canvas {
+  font-size: 0.7em;
+  width: 35%;
+  height: 6%;
+  padding-bottom: 10px;
+  background: #FFD759;
+  /* 3d effect */
+  border-top: 5px solid #FEF49C;
+  border-left: 3px solid #D8BF4E;
+  border-bottom: 5px solid #AE9538;
+  border-right: 3px solid #D8BF4E;
+  border-radius: 15px;
+  bottom: 7%;
+  left: 25%;
+  align-self: center;
+}
+
+#clear-canvas:active {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 3px #222;
+}
+
+#clear-canvas p {
+  margin: 0;
+  color: #EB593E;
+  padding-top: 4px;
+  font-size: 2.4em;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+#clear-canvas:hover {
+  cursor: pointer;
+}
 
 /* ========================== Instructions ================================= */
 #instructions {
   display: none;
 }
 
+@media screen and (min-width: 480px) {
+  #left-dial,
+  #right-dial {
+    width: 125px;
+    height: 125px;
+    border-radius: 125px;
+  }
+
+  #clear-canvas {
+    font-size: 0.9em;
+  }
+}
+
 @media screen and (min-width: 720px) {
+  body {
+    background: #6CAE75;
+    padding: 75px;
+  }
+
+  .canvas-container {
+    margin: 0 auto;
+    border-radius: 4px;
+    border-bottom: 8px solid #844442;
+    border-right: 8px solid rgba(98, 0, 1, 0.4);
+    border-top: 5px solid #790202;
+    border-left: 8px solid rgba(36, 0, 1, 0.4);
+  }
+
+  #bezel {
+    position: relative;
+    background: #CA0408;
+    margin: 0 auto;
+    padding: 75px 75px 225px;
+    position: relative;
+    box-sizing: border-box;
+    max-width: 600px;
+    height: auto;
+    /* 3d effect */
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 125px;
+    border-bottom-left-radius: 125px;
+
+    border-top: 15px solid #844442;
+    border-right: 20px solid #620001;
+    border-bottom: 15px solid #790202;
+    border-left: 20px solid #620001;
+
+    box-shadow: 5px 5px 15px #360101;
+  }
+
+  #clear-canvas {
+    width: 40%;
+    height: 8%;
+  }
+
   #instructions {
     display: block;
     background: #FFFAE2;
