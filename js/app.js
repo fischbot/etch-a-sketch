@@ -1,6 +1,6 @@
-var canvas = null,
+let canvas = null,
     canvasContext;
-var requestAnimFrame = window.requestAnimationFrame ||
+const requestAnimFrame = window.requestAnimationFrame ||
                        window.webkitRequestAnimationFrame ||
                        window.mozRequestAnimationFrame ||
                        window.oRequestAnimationFrame ||
