@@ -42,22 +42,20 @@ a:hover {
 
 /* ========================= Etch-A-Sketch ================================= */
 #canvas-container {
+  height: 300px;
+  width: 400px;
   text-align: center;
+  margin: 0 auto;
   border: none;
   position: relative;
-  /* width: 300px;
-  height: 350px; */
+  border-radius: 4px;
+  border-bottom: 8px solid #844442;
+  border-right: 8px solid rgba(98, 0, 1, 0.4);
+  border-top: 5px solid #790202;
+  border-left: 8px solid rgba(36, 0, 1, 0.4);
 }
 
-/* #canvas {
-  width: 300px;
-  height: 350px;
-} */
-
-
 #bezel {
-  /* width: 300px; */
-  /* height: 350px; */
   padding: 10px 0 0 0;
   border: 0;
   border-radius: 0;
@@ -148,15 +146,6 @@ a:hover {
   body {
     background: #6CAE75;
     padding: 75px;
-  }
-
-  .canvas-container {
-    margin: 0 auto;
-    border-radius: 4px;
-    border-bottom: 8px solid #844442;
-    border-right: 8px solid rgba(98, 0, 1, 0.4);
-    border-top: 5px solid #790202;
-    border-left: 8px solid rgba(36, 0, 1, 0.4);
   }
 
   #bezel {
